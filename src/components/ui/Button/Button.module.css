@@ -1,0 +1,85 @@
+/* Button Component Styles */
+.button {
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Size variants */
+.small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.medium {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.large {
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+/* Color variants */
+.primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.secondary {
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+  border: 1px solid var(--color-gray-300);
+}
+
+.secondary:hover:not(:disabled) {
+  background: var(--color-gray-200);
+}
+
+.danger {
+  background: var(--color-danger);
+  color: white;
+}
+
+.danger:hover:not(:disabled) {
+  background: var(--color-danger-dark);
+}
+
+.success {
+  background: var(--color-success);
+  color: white;
+}
+
+.success:hover:not(:disabled) {
+  background: var(--color-success-dark);
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.outline:hover:not(:disabled) {
+  background: var(--color-primary);
+  color: white;
+}

@@ -1,0 +1,66 @@
+/* Card Component Styles */
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.cardHeader {
+  padding: 24px 30px 0 30px;
+  border-bottom: 1px solid var(--color-gray-200);
+  margin-bottom: 24px;
+}
+
+.cardTitle {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.cardSubtitle {
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-gray-600);
+}
+
+.cardContent {
+  padding: 0 30px 30px 30px;
+}
+
+.cardActions {
+  padding: 20px 30px;
+  border-top: 1px solid var(--color-gray-200);
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+/* Variants */
+.elevated {
+  box-shadow: var(--shadow-elevated);
+}
+
+.gradient {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.gradient .cardTitle,
+.gradient .cardSubtitle {
+  color: white;
+}
+
+.gradient .cardHeader {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.gradient .cardActions {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}

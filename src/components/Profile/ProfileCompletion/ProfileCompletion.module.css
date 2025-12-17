@@ -1,0 +1,146 @@
+/* Profile Completion Styles */
+.completionAlert {
+  background: var(--gradient-warning);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow-warning);
+  border: 2px solid var(--color-warning-border);
+}
+
+.alertContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.alertIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.alertInfo {
+  flex: 1;
+}
+
+.alertTitle {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-warning-dark);
+}
+
+.alertDescription {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: var(--color-warning-text);
+  line-height: 1.5;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.progressBadge {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-warning-dark);
+  white-space: nowrap;
+}
+
+.progressBar {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-success);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: 12px;
+  color: var(--color-warning-text);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.missingFields {
+  margin-bottom: 15px;
+}
+
+.missingFieldsTitle {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-warning-dark);
+}
+
+.fieldTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.fieldTag {
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--color-danger);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+.completeButton {
+  background: var(--color-success);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-success);
+  flex-shrink: 0;
+}
+
+.completeButton:hover {
+  background: var(--color-success-dark);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .alertContent {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .progressContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .progressBar {
+    width: 100%;
+  }
+}

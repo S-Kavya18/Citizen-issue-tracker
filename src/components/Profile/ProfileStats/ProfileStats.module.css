@@ -1,0 +1,94 @@
+/* Profile Stats Styles */
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statsCard {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.statsTitle {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.statItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.statItem:last-child {
+  border-bottom: none;
+}
+
+.statLabel {
+  font-size: 14px;
+  color: var(--color-gray-600);
+  font-weight: 500;
+}
+
+.statValue {
+  font-size: 16px;
+  color: var(--color-gray-900);
+  font-weight: 600;
+}
+
+.accountInfo {
+  background: var(--color-gray-50);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid var(--color-gray-200);
+}
+
+.accountTitle {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.accountDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.accountDetail:last-child {
+  margin-bottom: 0;
+}
+
+.accountLabel {
+  font-size: 14px;
+  color: var(--color-gray-600);
+}
+
+.accountValue {
+  font-size: 14px;
+  color: var(--color-gray-900);
+  font-weight: 500;
+}
+
+.loadingStats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: var(--color-gray-500);
+}
+
+@media (max-width: 768px) {
+  .statsContainer {
+    margin-top: 20px;
+  }
+}

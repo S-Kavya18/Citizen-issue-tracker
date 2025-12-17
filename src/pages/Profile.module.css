@@ -1,0 +1,49 @@
+/* Profile Page Styles */
+.profileContainer {
+  margin-left: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--color-gray-50);
+}
+
+.profileContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.profileCard {
+  width: 100%;
+}
+
+.sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .profileContainer {
+    margin-left: 0;
+    padding: 16px;
+  }
+  
+  .profileContent {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileContainer {
+    padding: 12px;
+  }
+  
+  .profileContent {
+    gap: 16px;
+  }
+}
